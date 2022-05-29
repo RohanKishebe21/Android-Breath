@@ -20,10 +20,10 @@
 
     <TextView
         android:id="@+id/TotalTimeLayer"
-        android:layout_width="231dp"
-        android:layout_height="63dp"
-        android:text="Deadly parkour killer"
-        android:textColor="#FF0000"
+        android:layout_width="385dp"
+        android:layout_height="292dp"
+        android:text="Deadly parkour killer dark brawl stars assasin stalker sniper 1999RUS fortnite pro gamer 2007 100 procentov skidka 1 kk dead inside 1000-7 ya umer prosti minecraft killer grifer 228hitman ubiica SAMP killer 2009 doter777 psihokilla666 kilaura antitimer cheater999 killer arabov i asiatov 100 aim wh 337"
+        android:textColor="#00E1FF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

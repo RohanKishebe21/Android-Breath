@@ -35,6 +35,10 @@ class BreathFragment: Fragment() {
         parkour.text = viewModel.parameter.inhale.toString()
         killer.text = viewModel.parameter.exhale.toString()
         dark.text = viewModel.parameter.exhale.toString()
+
+        view.findViewById<Button>(R.id.startBaton).setOnClickListener {
+            viewModel.startSession()
+        }
     }
 
     fun onChange(newValues: SessionParameters){
@@ -47,6 +51,11 @@ class BreathFragment: Fragment() {
         parkour?.text = newValues.parameter.inhale.toString()
         killer?.text = newValues.parameter.exhale.toString()
         dark?.text = newValues.parameter.exhale.toString()
+    }
+
+
+    fun setStartEnabled(value : Boolean){
+        view?.findViewById<Button>(R.id.startBaton)?.isEnabled = value
     }
 
 

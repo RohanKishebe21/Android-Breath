@@ -26,12 +26,15 @@ class breathViewModel {
         ) {
             override fun onTick(p0: Long) {
                 updateSession()
-                listner?.onChange(currentParameters)
+                listener?.onChange(currentParameters)
             }
                 override fun onFinish(){
-
+                    listener?.setStartEnabled(true)
                 }
         }
+
+        timer?.start()
+        listener?.setStartEnabled(false)
     }
 
     fun updateSession(){
